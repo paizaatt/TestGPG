@@ -1,2 +1,0 @@
-# TestGPG
-Testing GPG Signature
