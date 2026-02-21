@@ -37,3 +37,43 @@ out/
 # --- [OS] Chặn file tạm của hệ điều hành ---
 .DS_Store
 Thumbs.db
+
+# --- [SECURITY] CHẶN MẬT KHẨU VÀ TOKEN (TXT, JS, ENV) ---
+# Chặn các file chứa từ khóa nhạy cảm (Cực kỳ hiệu quả)
+*pass*
+*token*
+*secret*
+*cred*
+*auth*
+
+# Chặn đích danh các file thường dùng để lưu cấu hình nhạy cảm
+password.txt
+passwords.txt
+token.txt
+tokens.js
+secrets.js
+config.private.js
+credentials.json
+.env
+*.pem
+*.key
+
+# Chặn nguyên một thư mục (Cách an toàn nhất cho QA)
+# Yêu cầu Dev vứt hết đồ nhạy cảm vào đây
+secrets/
+private/
+config/private/
+
+# --- [JAVA] CHẶN FILE BIÊN DỊCH VÀ RÁC HỆ THỐNG ---
+*.class
+*.log
+target/
+build/
+out/
+
+# --- [IDE] CHẶN CẤU HÌNH RIÊNG CỦA DEV ---
+.idea/
+.vscode/
+*.iml
+.project
+.settings/
