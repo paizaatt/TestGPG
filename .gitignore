@@ -69,7 +69,7 @@ config/private/
 *.log
 target/
 build/
-out/    
+out/
 
 # --- [IDE] CHẶN CẤU HÌNH RIÊNG CỦA DEV ---
 .idea/
