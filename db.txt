@@ -1,3 +1,0 @@
-Thanh nien
-yess
-Password="123456"
